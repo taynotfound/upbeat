@@ -7,8 +7,8 @@
     "postinstall": "patch-package",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo run:android",
-    "apk:release": "cd android && ./gradlew assembleRelease",
     "apk:debug": "cd android && ./gradlew assembleDebug",
+    "apk:release": "cd android && ./gradlew assembleRelease",
     "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "expo lint"

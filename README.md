@@ -23,13 +23,21 @@ Get the latest APK from [GitHub Releases](https://github.com/taynotfound/upbeat/
 
 ## Build Locally
 
+All builds run entirely on your PC with Gradle. No cloud dependency.
+
+### Debug APK (Fast, ~5 min)
 ```bash
-npm install
-npx expo start      # Start dev server
-npm run android     # Run on device/emulator
-npm run apk:debug   # Build debug APK (~5 min)
-npm run apk:release # Build release APK (~10 min)
+npm run apk:debug
 ```
+For testing and development. Includes debug symbols, optimized for iteration. Output: `android/app/build/outputs/apk/debug/app-debug.apk`
+
+### Release APK (~10 min)
+```bash
+npm run apk:release
+```
+Final production build. Fully optimized, minified, and ready for distribution. Output: `android/app/build/outputs/apk/release/app-release.apk`
+Everything builds 100% locally on your machine.
+
 
 ## Tech Stack
 
